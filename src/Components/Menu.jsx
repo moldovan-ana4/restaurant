@@ -2,7 +2,11 @@ import React from "react";
 import "./Styles/Menu.module.css";
 
 const Menu = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h3>Menu</h3>
+    </div>
+  );
 };
 
 export default Menu;
