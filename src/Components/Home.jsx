@@ -1,9 +1,11 @@
 import React from "react";
+import Navbar from "./Navbar";
 import "./Styles/Home.module.css";
 
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <h3> Home</h3>
       <div>
         kflwelfhwrlighwlkgenmjkgurdjgkltrmjkgjdbn

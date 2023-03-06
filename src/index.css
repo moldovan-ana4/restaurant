@@ -11,6 +11,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #192a56;
 }
 
 code {

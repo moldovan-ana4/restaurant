@@ -1,9 +1,11 @@
 import React from "react";
+import Navbar from "./Navbar";
 import "./Styles/Menu.module.css";
 
 const Menu = () => {
   return (
     <div>
+      <Navbar />
       <h3>Menu</h3>
       <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil voluptas
