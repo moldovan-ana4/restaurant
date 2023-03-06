@@ -6,43 +6,47 @@ import {
   faHeart,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
-// import Home from "./Home";
-// import Menu from "./Menu";
-// import Review from "./Review";
-// import Order from "./Order";
+import { Link } from "react-router-dom";
+import "./Styles/Navbar.css";
+import Home from "./Home";
+import Menu from "./Menu";
+import Review from "./Review";
+import Order from "./Order";
 
 const Navbar = () => {
   return (
-    <div>
-      <header className="navbar">
-        <FontAwesomeIcon id="icons" icon={faUtensils} />
-        <ul>
-          <li>
-            <a href="#logo" className="logo">
-              resto.
-            </a>
-          </li>
-          <li>
-            <a class="active" href="#home">
-              home
-            </a>
-          </li>
-          <li>
-            <a href="#menu">menu</a>
-          </li>
-          <li>
-            <a href="#review">review</a>
-          </li>
-          <li>
-            <a href="#order">order</a>
-          </li>
-        </ul>
+    <div className="nav-container">
+      <nav className="navbar">
+        <div className="nav-links">
+          <FontAwesomeIcon id="icons" icon={faUtensils} />
+          <ul>
+            <li>
+              <Link to="/" className="logo">
+                resto.
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="active">
+                home
+              </Link>
+            </li>
+            <li>
+              <Link to="/menu">menu</Link>
+            </li>
+            <li>
+              <Link to="/review">review</Link>
+            </li>
+            <li>
+              <Link to="/order">order</Link>
+            </li>
+          </ul>
+        </div>
         <form id="search-form">
           <FontAwesomeIcon id="icons" icon={faMagnifyingGlass} />
         </form>
         <FontAwesomeIcon id="icons" icon={faHeart} />
         <FontAwesomeIcon id="icons" icon={faCartShopping} />
-      </header>
+      </nav>
     </div>
   );
 };
