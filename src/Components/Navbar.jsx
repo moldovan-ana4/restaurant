@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faUtensils } from "@fortawesome/free-solid-svg-icons";
 import "./Styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <div className="nav-container">
-      <span className="logo">
-        &#127860; <Link to="/">resto.</Link>
+     <span className="logo"> <FontAwesomeIcon icon={faUtensils} /> 
+       <Link to="/">resto.</Link>
       </span>
       <nav className="navbar-links">
         <ul>
