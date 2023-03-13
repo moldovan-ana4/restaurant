@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 
 const Menu = () => {
+  const [menuList, setMenuList] = useState([]);
+  const [data, setData] = useState([]);
+
+  
+
+  async function getData() {
+    const result = await fetch("./menuItems.json");
+    const res = await result.json();
+    setData(res);
+    console.log(data);
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div>
       <Navbar />
-      <h3>Menu</h3>
-      <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil voluptas
-        vitae et obcaecati aliquid quos suscipit molestiae, molestias eum
-        corporis eaque id accusamus, perferendis odio magnam nobis. Laudantium
-        accusamus quidem atque eos cumque cupiditate! Ipsum, nostrum quod
-        consequatur nam cumque recusandae debitis. Quasi eaque consequuntur
-        eveniet reiciendis eius repellat tempore?
-      </div>
     </div>
   );
 };
