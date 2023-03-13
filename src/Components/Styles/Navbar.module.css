@@ -1,11 +1,11 @@
-.nav-container {
+.nav__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
   background-color: #fff;
 }
-.nav-container .logo {
+.nav__container .logo {
   font-size: 27px;
   text-transform: capitalize;
   font-weight: 600;
@@ -17,11 +17,11 @@
   color: #192a56;
 }
 
-.navbar-links ul {
+.navbar__links ul {
   display: flex;
   flex-direction: row;
 }
-.navbar-links ul li {
+.navbar__links ul li {
   list-style-type: none;
   margin: 0 15px;
   font-size: 20px;
@@ -29,7 +29,7 @@
   color: #666;
 }
 
-.navbar-links ul li :hover {
+.navbar__links ul li :hover {
   background-color: #27ae60;
   border-radius: 4px;
   padding: 10px;

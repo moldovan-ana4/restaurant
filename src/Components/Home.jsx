@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./Styles/Home.css";
+import styles from "./Styles/Home.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import pizza_margherita from "./Asests/img/pizza_margherita.jpg";
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="menu-description">
+      <div className={styles.menu__description}>
         <h3>Here are some of our most wanted dishes:</h3>
       </div>
       <Carousel
@@ -20,7 +20,6 @@ const Home = () => {
         interval={2000}
         infiniteLoop={true}
         renderThumbs={() => {}}
-        className="carousel"
       >
         <div>
           <div>

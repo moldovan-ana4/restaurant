@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "picture": "./img/pizza_margherita.jpg",
+    "price": 38,
+    "name": "Pizza Margherita",
+    "ingredients": "Ingredients: pizza dough, tomato souce, mozzarella, fior di late, kalamata olives, fresh basil"
+  },
+
+  {
+    "id": 2,
+    "picture": "./img/salamino_picante.jpeg",
+    "price": 45,
+    "name": "Pizza Salamino Picante",
+    "ingredients": "Ingredients: pizza dough, tomato souce, mozzarella, gorgonzola, spicy green peppers, spicy salami"
+  },
+
+  {
+    "id": 3,
+    "picture": "./img/quattro_stagioni.jpg",
+    "price": 36,
+    "name": "Pizza Quatro Stagioni",
+    "ingredients": "Ingredients: pizza dough, tomato souce, mozzarella, salami, mushrooms, black olives, red peppers"
+  },
+
+  {
+    "id": 4,
+    "picture": "./img/prosciutto_funghi.png",
+    "price": 36,
+    "name": "Pizza Prosciutto Funghi",
+    "ingredients": "Ingredients: pizza dough, tomato souce, mozzarella, ham, mushrooms"
+  },
+
+  {
+    "id": 5,
+    "picture": "./img/paste_creveti.jpg",
+    "price": 47,
+    "name": "Tagliatelle with shrimps",
+    "ingredients": "Ingredients: tagliatelle, shrimps, lemon juice, garlic, butter, olive oil, parsley"
+  },
+
+  {
+    "id": 6,
+    "picture": "./img/carbonara.jpg",
+    "price": 40,
+    "name": "Spaghetti carbonara",
+    "ingredients": "Ingredients: spaghetti, guanciale, parmesan, cooking cream, eggs, garlic, butter"
+  },
+
+  {
+    "id": 7,
+    "picture": "./img/tagliatele_ton.jpg",
+    "price": 44,
+    "name": "Tagliatelle with tuna",
+    "ingredients": "Ingredients: tagliatelle, tomato souce, tuna, black olives, garlic, parsley"
+  },
+
+  {
+    "id": 8,
+    "picture": "./img/tagliatelle_chicken.jpg",
+    "price": 38,
+    "name": " Fusilli with chicken breast and cream",
+    "ingredients": "Ingredients: fusilli pasta ,cooking cream ,chicken breast , butter, parsley"
+  }
+]
