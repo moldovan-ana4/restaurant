@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./Styles/Menu.module.css";
 
 const Menu = () => {
+
   return (
     <div>
       <Navbar />

@@ -1,0 +1,15 @@
+.menu_description {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+
+  /* height: 450px;
+  width: 450px; */
+}
+
+h3 {
+  color: #192a56;
+  align-items: center;
+  margin-left: 10px;
+}
+

@@ -1,33 +1,49 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./Styles/Home.module.css";
+import "./Styles/Home.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import pizza_margherita from "./Asests/img/pizza-margherita.jpg";
-import crispy_chicken_chilli from "./Asests/img/crispy_chicken_chilli.jpeg";
+import pizza_margherita from "./Asests/img/pizza_margherita.jpg";
+import salamino_picante from "./Asests/img/salamino_picante.jpeg";
+import spaghete_carbonara from "./Asests/img/spaghete_carbonara.jpg";
+import pizza_slice from "./Asests/img/pizza_slice.png";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-
+      <div className="menu-description">
+        <h3>Here are some of our most wanted dishes:</h3>
+      </div>
       <Carousel
         autoPlay={true}
-        interval={1500}
+        interval={2000}
         infiniteLoop={true}
         renderThumbs={() => {}}
+        className="carousel"
       >
         <div>
-          <img src={pizza_margherita} alt="pizza-margherita" />
+          <div>
+            <img src={pizza_margherita} alt="pizza-margherita" />
+          </div>
+          <div>
+            <p>Pizza Margherita</p>
+          </div>
         </div>
+
         <div>
-          <img src={crispy_chicken_chilli} alt="crispy-chicken-chilli.jpeg" />
+          <img src={pizza_slice} alt="pizza" />
+          <p>Pizza prosciuto e funghi</p>
         </div>
+
         <div>
-          <img src={pizza_margherita} alt="pizza-margherita" />
+          <img src={salamino_picante} alt="salamino-picante" />
+          <p>Pizza Salamino picante</p>
         </div>
+
         <div>
-          <img src={pizza_margherita} alt="pizza-margherita" />
+          <img src={spaghete_carbonara} alt="spaghete-carbonara" />
+          <p>Spaghetti Carbonara</p>
         </div>
       </Carousel>
     </div>

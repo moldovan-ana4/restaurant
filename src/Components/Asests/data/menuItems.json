@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "picture": "src/Components/Asests/img/pizza_margherita.jpg",
+    "price": 38,
+    "name": "Pizza Margherita",
+    "ingredients": [
+      "pizza dough",
+      "tomato souce",
+      "mozzarella",
+      "fior di late",
+      "kalamata olives",
+      "fresh basil"
+    ]
+  },
+
+  {
+    "id": 2,
+    "picture": "src/Components/Asests/img/salamino_picante.jpeg",
+    "price": 45,
+    "name": "Pizza Salamino Picante",
+    "ingredients": [
+      "pizza dough ",
+      "tomato souce",
+      "mozzarella",
+      "gorgonzola",
+      "spicy green peppers",
+      "spicy salami"
+    ]
+  },
+
+  {
+    "id": 3,
+    "picture": "src/Components/Asests/img/quatro_stagioni.jpg",
+    "price": 36,
+    "name": "Pizza Quatro Stagioni",
+    "ingredients": [
+      "pizza dough ",
+      "tomato souce",
+      "mozzarella",
+      "salami",
+      "mushrooms",
+      "blak olives",
+      "red peppers"
+    ]
+  },
+
+  {
+    "id": 4,
+    "picture": "src/Components/Asests/img/prosciutto_funghi.png",
+    "price": 36,
+    "name": "Pizza Prosciutto Funghi",
+    "ingredients": [
+      "pizza dough",
+      "tomato souce",
+      "mozzarella",
+      "ham",
+      "mushrooms"
+    ]
+  },
+
+  {
+    "id": 5,
+    "picture": "src/Components/Asests/img/paste_creveti.jpg",
+    "price": 47,
+    "name": "Tagliatelle with shrimps",
+    "ingredients": [
+      "tagliatelle",
+      "shrimps",
+      "lemon juice",
+      "garlic",
+      "butter",
+      "olive oil",
+      "parsley"
+    ]
+  },
+
+  {
+    "id": 6,
+    "picture": "src/Components/Asests/img/spaghete_carbonara.jpg",
+    "price": 40,
+    "name": "Spaghetti carbonara",
+    "ingredients": [
+      "spaghetti",
+      "guanciale",
+      "parmesan",
+      "cooking cream",
+      "eggs",
+      "garlic",
+      "butter"
+    ]
+  },
+
+  {
+    "id": 7,
+    "picture": "src/Components/Asests/img/tagliatele_ton.jpg",
+    "price": 44,
+    "name": "Tagliatelle with tuna",
+    "ingredients": [
+      "tagliatelle",
+      "tomato souce",
+      "tuna",
+      "blak olives",
+      "garlic",
+      "parsley"
+    ]
+  },
+
+  {
+    "id": 8,
+    "picture": "src/Components/Asests/img/pasta_chicken.jpg",
+    "price":38,
+    "name": " Fusilli with chicken breast and cream",
+    "ingredients": [
+      "fusilli pasta",
+      "cooking cream",
+      "chicken breast",
+      "mushrooms",
+      "butter",
+      "salt",
+      "pepper"
+    ]
+    }
+]
