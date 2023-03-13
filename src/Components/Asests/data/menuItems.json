@@ -112,13 +112,13 @@
     "price":38,
     "name": " Fusilli with chicken breast and cream",
     "ingredients": [
-      "fusilli pasta",
-      "cooking cream",
-      "chicken breast",
-      "mushrooms",
-      "butter",
-      "salt",
-      "pepper"
+      {
+      "fusilli pasta":"fusilli pasta",
+      "cooking cream": "cooking cream",
+      "chicken breast": "chicken breast",
+      "mushrooms" : "mushrooms",
+      "butter" : "butter"
+      }
     ]
     }
 ]
