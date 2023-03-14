@@ -3,8 +3,11 @@ import Navbar from "./Navbar";
 import styles from "./Styles/Menu.module.css";
 
 const Menu = () => {
-  // const [menuList, setMenuList] = useState(menu);
+  const [added, setadded] =useState(0);
   const [data, setData] = useState([]);
+
+
+  
 
   async function getData() {
     const result = await fetch("./menuItems.json");
