@@ -32,7 +32,7 @@ const Menu = () => {
                     alt="ListMenu"
                     style={{
                       aspectRatio: "auto",
-                      width: "300px",
+                      width: "350px",
                       height: "200px",
                     }}
                   />
