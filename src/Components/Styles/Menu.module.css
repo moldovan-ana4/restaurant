@@ -11,17 +11,14 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-} 
-
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
 
 .card img {
   border-radius: 10px;
-
 }
 
 .menu__items {
@@ -32,8 +29,7 @@
 .menu__ingredients {
   color: #666;
   font-size: 15px;
-  padding: 5px;
-
+  padding: 10px;
 }
 
 .d__flex {
@@ -43,21 +39,18 @@
   padding: 20px;
 }
 
-
 .d__flex button {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   background: #192a56;
-  padding: 7px;
+  padding: 15px;
   border-radius: 5px;
   border: 2px #27ae60;
+  cursor: pointer;
 }
 
 .d__flex button:hover {
   background-color: #27ae60;
-  padding: 10px;
+  width: 150px;
   border: 2px #27ae60;
 }
-
-
-
