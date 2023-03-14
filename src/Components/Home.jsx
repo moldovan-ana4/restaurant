@@ -19,7 +19,8 @@ const Home = () => {
         autoPlay={true}
         interval={2000}
         infiniteLoop={true}
-        renderThumbs={() => {}}
+        renderThumbs={() => {}
+      }
       >
         <div>
           <div>

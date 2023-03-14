@@ -33,6 +33,14 @@
 
   {
     "id": 5,
+    "picture": "./img/FunghiFunghi.jpg",
+    "price": 33,
+    "name": "Pizza Funghi e Funghi",
+    "ingredients": "Ingredients: pizza dough, tomato souce, mozzarella, forest mushroom mix"
+  },
+
+  {
+    "id": 6,
     "picture": "./img/paste_creveti.jpg",
     "price": 47,
     "name": "Tagliatelle with shrimps",
@@ -40,7 +48,7 @@
   },
 
   {
-    "id": 6,
+    "id": 7,
     "picture": "./img/carbonara.jpg",
     "price": 40,
     "name": "Spaghetti carbonara",
@@ -48,7 +56,7 @@
   },
 
   {
-    "id": 7,
+    "id": 8,
     "picture": "./img/tagliatele_ton.jpg",
     "price": 44,
     "name": "Tagliatelle with tuna",
@@ -56,7 +64,7 @@
   },
 
   {
-    "id": 8,
+    "id": 9,
     "picture": "./img/tagliatelle_chicken.jpg",
     "price": 38,
     "name": " Fusilli with chicken breast and cream",

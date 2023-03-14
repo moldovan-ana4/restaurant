@@ -33,7 +33,7 @@ const Menu = () => {
                     style={{
                       aspectRatio: "auto",
                       width: "300px",
-                      height: "300px",
+                      height: "200px",
                     }}
                   />
                   <div className={styles.menu__items}>{item.name}</div>
@@ -44,9 +44,9 @@ const Menu = () => {
                 </div>
                 <div className={styles.d__flex}>
                   <div>
-                    <button>Add to cart</button>
+                    <button>Add To Cart</button>
                   </div>
-                  <div>{item.price} RON</div>
+                  <div className={styles.menu_pricing}>{item.price} RON</div>
                 </div>
               </div>
             );
