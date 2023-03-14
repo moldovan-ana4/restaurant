@@ -21,6 +21,7 @@ const Menu = () => {
   return (
     <div>
       <Navbar />
+
       <div className={styles.grid__container}>
         {data &&
           data.map((item, i) => {
@@ -46,7 +47,7 @@ const Menu = () => {
                   <div>
                     <button>Add To Cart</button>
                   </div>
-                  <div className={styles.menu_pricing}>{item.price} RON</div>
+                  <div className={styles.menu__pricing}>{item.price} RON</div>
                 </div>
               </div>
             );

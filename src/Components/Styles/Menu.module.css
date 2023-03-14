@@ -54,3 +54,10 @@
   width: 150px;
   border: 2px #27ae60;
 }
+
+
+.menu__pricing {
+  font-size: 23px;
+  font-weight: normal;
+  color: #27ae60;
+}
