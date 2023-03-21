@@ -55,10 +55,11 @@ const Menu = () => {
 
                           setOrder((prevState) => [
                             ...prevState,
-                            {
+                            { id: item.id,
                               name: item.name,
                               price: item.price,
                               image: item.picture,
+                              quantity: 1
                             },
                           ]);
                         }}
