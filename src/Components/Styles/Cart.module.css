@@ -1,3 +1,27 @@
-.cart__menu {
-  display: flex;
+.cart__container {
+  margin-top: 30px;
 }
+
+/* .cart__container img {
+  display: flex;
+  border: 2px;
+} */
+
+.cart__name {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: #192a56;
+  font-size: 18px;
+}
+
+.cart__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: #27ae60;
+}
+
+/* .cart_buttons {
+
+} */
