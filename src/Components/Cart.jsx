@@ -63,7 +63,7 @@ const Cart = () => {
                   height: "80px",
                 }}
               />
-              <div>{e.name}</div>
+              <div>{e.price}</div>
               <button
                 onClick={() => {
                   dispatch({
