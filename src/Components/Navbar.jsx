@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { orders } = useContext(CartContext);
   const [order] = orders;
-  console.log(orders)
+  
   return (
     <div className={styles.nav__container}>
       <span className={styles.logo}>

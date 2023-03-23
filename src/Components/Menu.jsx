@@ -1,7 +1,7 @@
 import React, { useContext, createContext } from "react";
-import { CartContext } from "./Context/Context";
 import Navbar from "./Navbar";
 import styles from "./Styles/Menu.module.css";
+import { CartContext } from "./Context/Context";
 
 
 export const menuContext = createContext();
