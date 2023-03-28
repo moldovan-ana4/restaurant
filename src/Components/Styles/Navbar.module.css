@@ -1,20 +1,24 @@
 .nav__container {
   display: flex;
+  position: sticky;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px;
   background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .nav__container .logo {
   font-size: 27px;
   text-transform: capitalize;
   font-weight: 600;
-  color:#27ae60
+  color: #27ae60;
+  margin: 0 15px;
+  padding: 6px;
 }
-
 
 .logo a {
   color: #192a56;
+  padding: 6px;
 }
 
 .navbar__links ul {
@@ -24,15 +28,21 @@
 .navbar__links ul li {
   list-style-type: none;
   margin: 0 15px;
+  padding: 6px;
   font-size: 20px;
   text-transform: capitalize;
   color: #666;
+  cursor: pointer;
 }
 
 .navbar__links ul li:hover {
   background-color: #27ae60;
   border-radius: 4px;
-  padding: 5px;
+}
+
+.navbar__links ul li.active {
+  background-color: #27ae60;
+  border-radius: 4px;
 }
 
 li a {

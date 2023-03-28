@@ -1,23 +1,31 @@
 .menu__description {
   display: flex;
-  flex-direction: row;
 }
 
 h3 {
-  color: #192a56;
+  /* color: #192a56; */
+  color: #27ae60;
 }
 
 .carousel__img {
-  width: 50%;
-  height: 50%;
-  /* aspect-ratio: auto; */
+  width: 45%;
+  height: 30%;
+  aspect-ratio: auto;
   display: flex;
-  flex-direction: row;
   border-radius: 40%;
+  justify-content: space-between;
+}
+.carousel__img img {
+  border-radius: 5%;
 }
 
 .carousel__name {
-  display: flex;
-  flex-direction: row;
   font-size: 40px;
+  display: flex;
+  /* color: #27ae60; */
+    color: #192a56;
+  font-weight: bold;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
