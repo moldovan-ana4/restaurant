@@ -4,7 +4,8 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   max-width: 1280px;
   gap: 30px;
-  /* padding: 2px 8px; */
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .card {
@@ -54,7 +55,6 @@
   /* width: 150px; */
   border: 2px #27ae60;
 }
-
 
 .menu__pricing {
   font-size: 23px;
