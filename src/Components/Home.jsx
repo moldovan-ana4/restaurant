@@ -12,40 +12,54 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className={styles.menu__description}>
+      <div>
         <h3>Here are some of our most wanted dishes:</h3>
       </div>
-      <Carousel
-        autoPlay={true}
-        interval={2000}
-        infiniteLoop={true}
-        renderThumbs={() => {}
-      }
-      >
-        <div>
+
+      <div className={styles.menu__description}>
+        <Carousel
+          autoPlay={true}
+          interval={2000}
+          infiniteLoop={true}
+          renderThumbs={() => {}}
+        >
           <div>
-            <img src={pizza_margherita} alt="pizza-margherita" />
+            <div className={styles.carousel__img}>
+              <img src={pizza_margherita} alt="pizza-margherita" />
+            </div>
+            <div className={styles.carousel__name}>
+              <p>Pizza Margherita</p>
+            </div>
           </div>
+
           <div>
-            <p>Pizza Margherita</p>
+            <div className={styles.carousel__img}>
+              <img src={pizza_slice} alt="pizza" />
+            </div>
+            <div className={styles.carousel__name}>
+              <p>Pizza prosciuto e funghi</p>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <img src={pizza_slice} alt="pizza" />
-          <p>Pizza prosciuto e funghi</p>
-        </div>
+          <div>
+            <div className={styles.carousel__img}>
+              <img src={salamino_picante} alt="salamino-picante" />
+            </div>
+            <div className={styles.carousel__name}>
+              <p>Pizza Salamino picante</p>
+            </div>
+          </div>
 
-        <div>
-          <img src={salamino_picante} alt="salamino-picante" />
-          <p>Pizza Salamino picante</p>
-        </div>
-
-        <div>
-          <img src={spaghete_carbonara} alt="spaghete-carbonara" />
-          <p>Spaghetti Carbonara</p>
-        </div>
-      </Carousel>
+          <div>
+            <div className={styles.carousel__img}>
+              <img src={spaghete_carbonara} alt="spaghete-carbonara" />
+            </div>
+            <div className={styles.carousel__name}>
+              <p>Spaghetti Carbonara</p>
+            </div>
+          </div>
+        </Carousel>
+      </div>
     </div>
   );
 };

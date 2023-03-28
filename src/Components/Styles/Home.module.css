@@ -1,15 +1,23 @@
 .menu__description {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
-
-  /* height: 450px;
-  width: 450px; */
 }
 
-/* h3 {
+h3 {
   color: #192a56;
-  align-items: center;
-  margin-left: 10px;
-} */
+}
 
+.carousel__img {
+  width: 50%;
+  height: 50%;
+  /* aspect-ratio: auto; */
+  display: flex;
+  flex-direction: row;
+  border-radius: 40%;
+}
+
+.carousel__name {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+}
