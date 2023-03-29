@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <Navbar />
 
-      <div className={styles.menu__description}>
+      <div className={styles.home__description}>
         <Carousel
           autoPlay={true}
           interval={2000}
