@@ -5,8 +5,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import pizza_margherita from "./Asests/img/pizza_margherita.jpg";
 import salamino_picante from "./Asests/img/salamino_picante.jpeg";
-import spaghete_carbonara from "./Asests/img/spaghete_carbonara.jpg";
 import pizza_slice from "./Asests/img/pizza_slice.png";
+import tagliatelle_chicken from "./Asests/img/tagliatelle_chicken.jpg";
+
 
 const Home = () => {
   return (
@@ -21,7 +22,6 @@ const Home = () => {
           renderThumbs={() => {}}
         >
           <div className={styles.carousel__name}>
-
             <p>Pizza Margherita</p>
             <div className={styles.carousel__img}>
               <img src={pizza_margherita} alt="pizza-margherita" />
@@ -43,9 +43,9 @@ const Home = () => {
           </div>
 
           <div className={styles.carousel__name}>
-            <p>Spaghetti Carbonara</p>
+            <p>Chicken Tagliatelle</p>
             <div className={styles.carousel__img}>
-              <img src={spaghete_carbonara} alt="spaghete-carbonara" />
+              <img src={tagliatelle_chicken} alt="chicken-tagliatelle" />
             </div>
           </div>
         </Carousel>
