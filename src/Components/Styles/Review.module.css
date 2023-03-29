@@ -1,34 +1,43 @@
 .review__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 10px;
   margin-top: 10px;
+  margin-left: 10px;
+  width: 40%;
+  border: 3px solid #192a56;
 }
 
 .review__name {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* color: #666; */
   color: #192a56;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
 }
 
 .review__img {
   display: flex;
-  align-items: center;
-  padding: 5px;
-  margin-top: 5px;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  /* padding: 5px; */
+  /* margin-top: 5px; */
   aspect-ratio: auto;
-
+  row-gap: 1.5 rem;
 }
 
-/* .review__img img{ 
+.review__img img {
   border-radius: 50%;
-} */
+}
 
 .review__message {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
   color: #192a56;
-  font-size: 20px;
+  font-size: 17px;
 }

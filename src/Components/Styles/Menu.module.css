@@ -6,7 +6,6 @@
   gap: 30px;
   padding: 10px;
   margin-top: 10px;
-
 }
 
 .card {
@@ -21,10 +20,13 @@
 
 .card img {
   border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  aspect-ratio: auto;
 }
 
 .menu__items {
-  font-size: 25px;
+  font-size: 23px;
   color: #192a56;
   font-weight: bold;
 }
