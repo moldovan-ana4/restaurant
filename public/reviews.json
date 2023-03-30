@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Julius Ionescu",
     "image": "./img/pic-1.png",
-    "message": "I ordered my plain pizza, Margherita. Food with few ingredients is a challenge to make memorable. Only the best chefs can do that!Very good, the people are very nice, the price is good and it feels like a family business.Thank you for existing! "
+    "message": "I ordered my plain pizza, Margherita. Food with few ingredients is a challenge to make memorable. Only the best chefs can do that!Very good, the people are very nice, the price is good."
   },
 
 {
   "id": 2,
   "name": "Naomi Watson",
   "image": "./img/pic-2.png",
-  "message": "I rarely order pizza, and I want it to be worth the calories and not have any regrets when I eat it!I have ordered from most of the pizzerias around and I can assure you that none are as good as the pizza at Resto! Thank you for delicious pizza you make!"
+  "message": "I rarely order pizza, and I want it to be worth the calories and not have any regrets when I eat it! I have ordered from most of the pizzerias around and I can assure you that none are as good as the pizza at Resto!"
 },
 
 
@@ -18,14 +18,14 @@
 "id": 3,
 "name": "Andrew Ionescu",
 "image":"./img/pic-3.png",
-"message": "Delicious lunch! I used to love this place and for sure I will in the future, because of their unique ideas and of course delicious pasta.This time the pasta wasn't perfect, I felt a rainbow on the roof of my mouth."
+"message": "Delicious lunch! I used to love this place and for sure I will in the future, because of their unique ideas and of course delicious pasta. "
 },
 
 {
   "id": 4,
   "name": "Olivia Dobs",
   "image": "./img/pic-4.png",
-  "message": "I just love the Resto's dishes! I've tried their famous pizza's and also the pasta with shrimps. Quality food and tasty too!"
+  "message": "I just love the Resto's dishes! I've tried their famous pizza's and also the pasta with shrimps. I think it's a familly bussines and they're doing a great job! Quality food and tasty too!"
 }
 
 

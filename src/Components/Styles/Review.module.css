@@ -1,13 +1,31 @@
+.review__intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #27ae60;
+  color: #192a56;
+  font-size: 30px;
+}
+
+.review__description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 25px;
+  color:#27ae60;
+}
+
 .review__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px; 
-  /* margin-top: 10px; */
+  padding: 10px;
   margin-left: 10px;
   width: 40%;
-  border: 2px solid #666;
+  border: 1px solid #192a56;
+  border-radius: 30px;
 }
 
 .review__name {
@@ -37,7 +55,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #192a56;
+  color:#666;
   font-size: 17px;
   margin-left: 25px;
 }

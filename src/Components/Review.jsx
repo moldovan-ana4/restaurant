@@ -18,14 +18,16 @@ const Review = () => {
   }, []);
 
   return (
-    <div >
+    <div>
       <Navbar />
-      <h3>What our customers say about the menu?</h3>
-
-      <div>
+      <section className={styles.review__intro}>
+        <span>What our customers say about the menu?</span>
+      </section>
+      <div className={styles.review__description}>
+      <p>Check it out, now!</p>
         <Carousel
           autoPlay={true}
-          interval={5000}
+          interval={3000}
           infiniteLoop={true}
           renderThumbs={() => {}}
         >
