@@ -27,13 +27,21 @@
   border-radius: 30px;
 }
 
+.review__name {
+  display: flex;
+  flex-direction: row;
+  color: #192a56;
+  font-size: 18px;
+  /* font-weight: bolder; */
+}
+
 .review__user {
   display: flex;
   flex-direction: column;
   aspect-ratio: auto;
   color: #192a56;
   font-size: 20px;
-  /* font-weight: bolder; */
+  font-weight: bolder;
 }
 
 .review__user img {
