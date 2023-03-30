@@ -20,20 +20,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 10px;
   margin-left: 10px;
   width: 60%;
   border: 1px solid #192a56;
   border-radius: 30px;
-}
-
-.review__name {
-  display: flex;
-  flex-direction: row;
-  color: #192a56;
-  font-size: 18px;
-  font-weight: bolder;
 }
 
 .review__user {
@@ -42,7 +33,7 @@
   aspect-ratio: auto;
   color: #192a56;
   font-size: 20px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 .review__user img {
