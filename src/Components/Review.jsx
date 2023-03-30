@@ -24,14 +24,13 @@ const Review = () => {
         <span>What our customers say about the menu?</span>
       </section>
       <div className={styles.review__description}>
-      <p>Check it out, now!</p>
+        <p>Check it out, now!</p>
         <Carousel
           autoPlay={true}
-          interval={5000}
+          interval={3000}
           infiniteLoop={true}
           renderThumbs={() => {}}
           centerMode={true}
-
         >
           {reviews.map((item, i) => {
             return (
