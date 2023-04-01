@@ -1,5 +1,45 @@
 .footer__container {
-  display: grid;
+  padding: 15px;
+  background-color: #eee;
+  position: sticky;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  color: #192a56;
+  font-size: 17px;
+}
 
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  gap:5px;
+}
 
+.footer__socials {
+  display: flex;
+  align-items: flex-start;
+  gap:5px;
+}
+.footer__logo .footer__icons {
+  color: #27ae60;
+}
+
+.footer__follow__us {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.footer__icons {
+  font-size: 20px;
+  color: #192a56;
+}
+
+.footer__adress {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import styles from "./Styles/Home.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,7 +14,6 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-
       <div className={styles.home__description}>
         <Carousel
           autoPlay={true}
@@ -50,6 +50,7 @@ const Home = () => {
           </div>
         </Carousel>
       </div>
+      <Footer />
     </div>
   );
 };
