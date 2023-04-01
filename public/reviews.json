@@ -8,7 +8,7 @@
 
   {
     "id": 2,
-    "name": "Naomi Watson",
+    "name": "Angelina Watson",
     "image": "./img/pic-2.png",
     "message": "I rarely order pizza, and I want it to be worth the calories and not have any regrets when I eat it! I have ordered from most of the pizzerias around and I can assure you that none are as good as the pizza at Resto!"
   },
@@ -22,7 +22,7 @@
 
   {
     "id": 4,
-    "name": "Olivia Stanciu",
+    "name": "Elizabeth Stanciu",
     "image": "./img/pic-4.png",
     "message": "I just love the Resto's dishes! I've tried their famous pizza's and also the pasta with shrimps. I think it's a familly bussines and they're doing a great job! Quality food and tasty too!"
   }

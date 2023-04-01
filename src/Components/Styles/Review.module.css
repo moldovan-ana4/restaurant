@@ -1,3 +1,7 @@
+.review__page{
+  min-width: 100%;
+  min-height: 100%;
+}
 .review__intro {
   display: flex;
   justify-content: center;
