@@ -1,11 +1,7 @@
-.review__page{
-  min-width: 100%;
-  min-height: 100%;
-}
 .review__intro {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   color: #27ae60;
   color: #192a56;
@@ -24,6 +20,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 15px;
   padding: 10px;
   width: 60%;
   border: 1px solid #192a56;

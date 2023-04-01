@@ -40,7 +40,6 @@ const Cart = () => {
   return (
     <div>
       <Navbar />
-      <h3>Cart</h3>
       <div className={styles.cart__container}>
         {order.map((e, u) => {
           return (

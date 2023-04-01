@@ -26,6 +26,7 @@
 }
 
 .menu__items {
+  margin-left: 10px;
   font-size: 23px;
   color: #192a56;
   font-weight: bold;
