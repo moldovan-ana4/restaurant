@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./Styles/Order.module.css";
 import { useContext, useReducer } from "react";
 import { CartContext } from "./Context/Context";
@@ -80,6 +81,7 @@ const Cart = () => {
           Total Price: {state.newCart2?.reduce((a, b) => a + b, 0)} RON
         </span>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -3,8 +3,7 @@
   position: sticky;
   padding:10px;
   justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #eee;
 }
 .nav__container .logo {
   font-size: 27px;
