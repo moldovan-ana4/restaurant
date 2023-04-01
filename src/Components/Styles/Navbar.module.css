@@ -1,9 +1,8 @@
 .nav__container {
   display: flex;
   position: sticky;
+  padding:10px;
   justify-content: space-between;
-  padding: 5px;
-  width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -47,4 +46,10 @@
 
 li a {
   color: #666;
+}
+
+
+.navbar__cart {
+  font-size: 23px;
+  color:#192a56;
 }

@@ -1,12 +1,11 @@
-.cart__container {
-  margin-top: 30px;
-}
-
-
-
 .cart__name {
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   color: #192a56;
   font-size: 18px;
@@ -15,10 +14,15 @@
 .cart__buttons {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: #27ae60;
 }
 
-/* .cart_buttons {
-
-} */
+.cart__buttons button {
+  padding: 8px;
+  font-size: 15px;
+  color: #192a56;
+}

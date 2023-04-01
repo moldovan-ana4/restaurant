@@ -1,7 +1,8 @@
 .home__description {
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
+  max-width: 1500px;
 }
 
 .carousel__img {

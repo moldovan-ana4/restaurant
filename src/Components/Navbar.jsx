@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { orders } = useContext(CartContext);
   const [order] = orders;
-  
+
   return (
     <div className={styles.nav__container}>
       <span className={styles.logo}>
@@ -20,12 +20,12 @@ const Navbar = () => {
       <nav className={styles.navbar__links}>
         <ul>
           <li onClick={() => navigate("/")}>home </li>
+          <li onClick={() => navigate("/aboutUs")}>about us</li>
           <li onClick={() => navigate("/menu")}>menu</li>
           <li onClick={() => navigate("/review")}>reviews </li>
-          <li onClick={() => navigate("/order")}>order </li>
           <li>
             {order.length > 0 ? order.length : ""}
-            <span
+            <span className={styles.navbar__cart}
               onClick={() => {
                 navigate("/cart");
               }}

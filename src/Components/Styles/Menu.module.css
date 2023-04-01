@@ -1,11 +1,11 @@
 .grid__container {
+  padding: 10px;
+  margin-top: 15px;
   display: grid;
   grid-template-rows: repeat(4, 400px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  max-width: 1280px;
+  max-width: 1500px;
   gap: 30px;
-  padding: 10px;
-  margin-top: 10px;
 }
 
 .card {
@@ -26,6 +26,7 @@
 }
 
 .menu__items {
+  margin-left: 10px;
   font-size: 23px;
   color: #192a56;
   font-weight: bold;

@@ -17,7 +17,7 @@ const Home = () => {
       <div className={styles.home__description}>
         <Carousel
           autoPlay={true}
-          interval={2000}
+          interval={3000}
           infiniteLoop={true}
           renderThumbs={() => {}}
         >
