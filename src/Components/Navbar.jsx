@@ -23,10 +23,9 @@ const Navbar = () => {
           <li onClick={() => navigate("/aboutUs")}>about us</li>
           <li onClick={() => navigate("/menu")}>menu</li>
           <li onClick={() => navigate("/review")}>reviews </li>
-          <li onClick={() => navigate("/order")}>order </li>
           <li>
             {order.length > 0 ? order.length : ""}
-            <span
+            <span className={styles.navbar__cart}
               onClick={() => {
                 navigate("/cart");
               }}

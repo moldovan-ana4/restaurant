@@ -29,7 +29,7 @@ const Cart = () => {
           newCart2: state.cart.map((e) => e.price * e.quantity),
         };
       }
-      default:
+      default: 
         return state;
     }
   }
