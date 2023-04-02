@@ -43,10 +43,10 @@ const AboutUs = () => {
                 <span> Free Delivery</span>
               </div>
               <div className={styles.about__options}>
-              <span className={styles.about__icons}>
-                <FontAwesomeIcon icon={faWallet} />
-              </span>
-              <span> Easy Payments</span>
+                <span className={styles.about__icons}>
+                  <FontAwesomeIcon icon={faWallet} />
+                </span>
+                <span> Easy Payments</span>
               </div>
             </div>
           </div>

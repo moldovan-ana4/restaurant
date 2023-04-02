@@ -9,7 +9,6 @@ import salamino_picante from "./Asests/img/salamino_picante.jpeg";
 import pizza_slice from "./Asests/img/pizza_slice.png";
 import tagliatelle_chicken from "./Asests/img/tagliatelle_chicken.jpg";
 
-
 const Home = () => {
   return (
     <div>
@@ -50,6 +49,13 @@ const Home = () => {
           </div>
         </Carousel>
       </div>
+      <div className={styles.home__schedule}>
+        <span>Our Timetable</span>
+      </div>
+        <div className={styles.home__program}>
+          <span>Monday - Thursday 16:00 - 22:00</span>
+          <span>Friday - Sunday 10:00 - 22:00</span>
+        </div>
       <Footer />
     </div>
   );
