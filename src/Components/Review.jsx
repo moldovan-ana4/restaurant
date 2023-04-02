@@ -29,7 +29,7 @@ const Review = () => {
           <p>Check it out, now!</p>
           <Carousel
             autoPlay={true}
-            interval={3000}
+            interval={5000}
             infiniteLoop={true}
             renderThumbs={() => {}}
             centerMode={true}
