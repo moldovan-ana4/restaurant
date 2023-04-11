@@ -25,7 +25,8 @@ const Navbar = () => {
           <li onClick={() => navigate("/review")}>reviews </li>
           <li>
             {order.length > 0 ? order.length : ""}
-            <span className={styles.navbar__cart}
+            <span
+              className={styles.navbar__cart}
               onClick={() => {
                 navigate("/cart");
               }}

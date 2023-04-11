@@ -11,8 +11,6 @@ const Review = () => {
     const reviews = await fetch("./reviews.json");
     const resReviews = await reviews.json();
     setReviews(resReviews);
-
-    // console.log(reviews);
   }
   useEffect(() => {
     getReviews();
@@ -33,6 +31,7 @@ const Review = () => {
             infiniteLoop={true}
             renderThumbs={() => {}}
             centerMode={true}
+            showStatus={false}
           >
             {reviews.map((item, i) => {
               return (

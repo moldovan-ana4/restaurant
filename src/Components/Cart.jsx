@@ -10,45 +10,63 @@ const Cart = () => {
   const { orders } = useContext(CartContext);
   const [order] = orders;
 
+  //UPDATE
   function reducer(state, action) {
     switch (action.type) {
       case "increase": {
+        const newOrder = state.cart.map((item) =>
+          item.id === action.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
         return {
           ...state,
-          newCart: state.cart.filter((c) =>
-            c.id === action.id ? c.quantity++ : c.quantity
-          ),
-          newCart2: state.cart.map((e) => e.price * e.quantity),
+          cart: newOrder,
+          cartTotal: calculateTotal(newOrder),
         };
       }
       case "decrease": {
+        const newOrder = state.cart
+          .map((item) =>
+            item.id === action.id
+              ? { ...item, quantity: item.quantity - 1 }
+              : item
+          )
+          .filter((item) => item.quantity > 0);
         return {
           ...state,
-          newCart: state.cart.filter((c) =>
-            c.id === action.id ? c.quantity-- : c.quantity
-          ),
-          newCart2: state.cart.map((e) => e.price * e.quantity),
+          cart: newOrder,
+          cartTotal: calculateTotal(newOrder),
         };
       }
-      default: 
+      default:
         return state;
     }
   }
+
+  const calculateTotal = (cart) => {
+    return cart.reduce((total, item) => {
+      return total + item.price * item.quantity;
+    }, 0);
+  };
+
   const [state, dispatch] = useReducer(reducer, {
     cart: order,
+    cartTotal: calculateTotal(order),
   });
 
+  
   return (
     <div>
       <Navbar />
       <div className={styles.cart__container}>
-        {order.map((e, u) => {
+        {state.cart.map((item) => {
           return (
-            <div key={u}>
-              <img src={e.image} alt={e.image} />
+            <div key={item.id}>
+              {/* <img src={item.imgUrl} alt={item.name} /> */}
               <div className={styles.cart__name}>
-                <div>{e.name}</div>
-                <div>{e.price} RON</div>
+                <div>{item.name}</div>
+                <div>{item.price} RON</div>
               </div>
 
               <div className={styles.cart__buttons}>
@@ -56,18 +74,18 @@ const Cart = () => {
                   onClick={() => {
                     dispatch({
                       type: "increase",
-                      ...e,
+                      id: item.id,
                     });
                   }}
                 >
                   +{" "}
                 </button>
-                <div>{e.quantity}</div>
+                <div>{item.quantity}</div>
                 <button
                   onClick={() => {
                     dispatch({
                       type: "decrease",
-                      ...e,
+                      id: item.id,
                     });
                   }}
                 >
@@ -77,9 +95,7 @@ const Cart = () => {
             </div>
           );
         })}
-        <span>
-          Total Price: {state.newCart2?.reduce((a, b) => a + b, 0)} RON
-        </span>
+        <span>Total Price: {state.cartTotal} RON</span>
       </div>
       <Footer />
     </div>
