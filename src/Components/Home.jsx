@@ -19,6 +19,7 @@ const Home = () => {
           interval={3000}
           infiniteLoop={true}
           renderThumbs={() => {}}
+          showStatus={false}
         >
           <div className={styles.carousel__name}>
             <p>Pizza Margherita</p>

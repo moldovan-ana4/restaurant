@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import { createContext } from 'react';
+import React, { useState, useEffect, createContext } from "react";
 
 
-export const CartContext = createContext()
+export const CartContext = createContext();
+
 const Context = ({ children }) => {
-  const [products, setProducts] = useState ([]);
-  const [data, setData] = useState ([]);
-
+  const [products, setProducts] = useState([]);
+  const [data, setData] = useState([]);
 
   async function getData() {
     const result = await fetch("./menuItems.json");
@@ -14,15 +13,16 @@ const Context = ({ children }) => {
     setProducts(res);
   }
 
-
   useEffect(() => {
     getData();
   }, []);
 
   return (
-    <CartContext.Provider  value={{orders:[data, setData], products:[products, setProducts]}}>
+    <CartContext.Provider
+      value={{ orders: [data, setData], products: [products, setProducts] }}
+    >
       {children}
     </CartContext.Provider>
-  )
-}
+  );
+};
 export default Context;

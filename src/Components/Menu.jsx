@@ -8,6 +8,7 @@ export const menuContext = createContext();
 
 const Menu = () => {
   const { products, orders } = useContext(CartContext);
+  // eslint-disable-next-line no-unused-vars
   const [data, setData] = products;
   const [order, setOrder] = orders;
   return (
@@ -19,7 +20,7 @@ const Menu = () => {
             return (
               <div key={i} className={styles.card}>
                 <div className={styles.images}>
-                  <img src={item.picture} alt="ListMenu" />
+                  <img src={item.imgUrl} alt="ListMenu" />
                   <div className={styles.menu__items}>{item.name}</div>
                 </div>
                 <div className={styles.menu__ingredients}>
@@ -27,16 +28,42 @@ const Menu = () => {
                 </div>
                 <div className={styles.d__flex}>
                   <div>
+                    {/* UPDATE */}
+
                     <button
                       onClick={() => {
-                        setOrder((prevState) => [
-                          ...prevState,
-                          { ...item, quantity: 1 },
-                        ]);
+                        const itemIndex = order.findIndex(
+                          (orderItem) => orderItem.id === item.id
+                        );
+                        if (itemIndex === -1) {
+                          // If item is not in cart, add it with quantity 1
+                          setOrder((prevState) => [
+                            ...prevState,
+                            { ...item, quantity: 1 },
+                          ]);
+                        } else if (order[itemIndex].quantity === 0) {
+                          // If item is in cart with quantity 0, remove it
+                          setOrder((prevState) => [
+                            ...prevState.slice(0, itemIndex),
+                            ...prevState.slice(itemIndex + 1),
+                          ]);
+                        } else {
+                          // If item is in cart with quantity > 0, increase quantity by 1
+                          setOrder((prevState) => [
+                            ...prevState.slice(0, itemIndex),
+                            {
+                              ...prevState[itemIndex],
+                              quantity: prevState[itemIndex].quantity + 1,
+                            },
+                            ...prevState.slice(itemIndex + 1),
+                          ]);
+                        }
                       }}
                     >
                       Add To Cart
                     </button>
+
+                    {/* UPDATE */}
                   </div>
                   <div className={styles.menu__pricing}>{item.price} RON</div>
                 </div>

@@ -33,7 +33,6 @@ const Footer = () => {
           <p>Email: contact@resto.ro</p>
         </div>
       </div>
-      {/* <hr /> */}
       <div className={styles.footer__copyright}>
         Copyright 2020 Resto. | All Rights Reserved 
       </div>
