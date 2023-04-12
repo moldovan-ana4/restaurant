@@ -36,7 +36,7 @@ const Home = () => {
           </div>
 
           <div className={styles.carousel__name}>
-            <p>Pizza Salamino picante</p>
+            <p>Pizza Salamino Picante</p>
             <div className={styles.carousel__img}>
               <img src={salamino_picante} alt="salamino-picante" />
             </div>
