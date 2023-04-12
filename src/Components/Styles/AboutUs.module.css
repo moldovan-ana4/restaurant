@@ -18,7 +18,7 @@
 }
 
 .about__container h3 {
-  font-size:26px;
+  font-size: 26px;
   align-items: baseline;
 }
 .about__container {
@@ -27,7 +27,6 @@
   display: grid;
   grid-template-rows: repet(2, 100px);
   grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-  max-width: 1500px;
   line-height: 2;
 }
 
@@ -52,5 +51,19 @@
 
 .about__icons {
   color: #27ae60;
+}
+
+@media screen and (min-width: 320px) {
+  .about__container {
+    display: grid;
+    grid-template-columns: min-content;
+    gap: 15px;
+    font-size: 15px;
+  }
+  .about__container h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
 }
 

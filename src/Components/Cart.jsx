@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import "./Styles/Order.module.css";
+import "./Styles/Cart.module.css";
 import { useContext, useReducer } from "react";
 import { CartContext } from "./Context/Context";
 import styles from "./Styles/Cart.module.css";
