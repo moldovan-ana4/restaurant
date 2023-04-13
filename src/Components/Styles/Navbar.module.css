@@ -1,6 +1,5 @@
 .nav__container {
   display: flex;
-  padding:10px;
   justify-content: space-between;
   background-color: #eee;
 }
@@ -9,13 +8,12 @@
   text-transform: capitalize;
   font-weight: 600;
   color: #27ae60;
-  margin: 0 15px;
-  padding: 6px;
 }
 
 .logo a {
   color: #192a56;
-  padding: 6px;
+  text-decoration: none;
+
 }
 
 .navbar__links ul {
@@ -25,11 +23,15 @@
 .navbar__links ul li {
   list-style-type: none;
   margin: 0 15px;
-  padding: 6px;
   font-size: 20px;
   text-transform: capitalize;
   color: #666;
   cursor: pointer;
+  background-color: #eee;
+}
+
+.nav__container  .navbar__links {
+  background-color: #eee;
 }
 
 .navbar__links ul li:hover {
@@ -46,8 +48,14 @@ li a {
   color: #666;
 }
 
-
 .navbar__cart {
   font-size: 25px;
-  color:#192a56;
+  color: #192a56;
 }
+
+/* @media screen and (max-width: 370px) {
+.nav__container {
+
+
+}
+} */
