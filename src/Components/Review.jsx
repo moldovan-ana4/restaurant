@@ -29,7 +29,7 @@ const Review = () => {
             interval={5000}
             infiniteLoop={true}
             renderThumbs={() => {}}
-            centerMode={true}
+            // centerMode={true}
             showStatus={false}
           >
             {reviews.map((item, i) => {
