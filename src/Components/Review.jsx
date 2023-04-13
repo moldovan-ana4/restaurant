@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { Carousel } from "react-responsive-carousel";
 import styles from "./Styles/Review.module.css";
 
@@ -49,7 +48,6 @@ const Review = () => {
           </Carousel>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

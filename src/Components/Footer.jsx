@@ -16,7 +16,7 @@ const Footer = () => {
           <span> Resto.</span>
         </div>
         <div className={styles.footer__follow__us}>
-          FOLLOW US:
+          <h4>Follow us: </h4>
           <div className={styles.footer__socials}>
             <span className={styles.footer__icons}>{<AiFillInstagram />}</span>
             <span> Instagram</span>
@@ -27,14 +27,16 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footer__adress}>
-          ADRESS:
-          <p>Street Deva 46, Cluj-Napoca 400535</p>
-          <p>Phone Number: 0743 911 520</p>
-          <p>Email: contact@resto.ro</p>
+          <h4>Contact: </h4>
+          <ul> </ul>
+          <li>Phone Number: 0743 911 520</li>
+          <li>Email: contact@resto.ro</li>
+          <li>Street Deva 46, Cluj-Napoca</li>
         </div>
       </div>
+        <hr />
       <div className={styles.footer__copyright}>
-        Copyright 2020 Resto. | All Rights Reserved 
+        Copyright 2020 Resto. | All Rights Reserved
       </div>
     </div>
   );

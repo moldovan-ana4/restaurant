@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import pizza_slice from "./Asests/img/pizza_slice.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck, faWallet } from "@fortawesome/free-solid-svg-icons";
@@ -52,7 +51,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

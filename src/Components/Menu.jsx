@@ -1,6 +1,5 @@
 import React, { useContext, createContext } from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import styles from "./Styles/Menu.module.css";
 import { CartContext } from "./Context/Context";
 
@@ -71,7 +70,6 @@ const Menu = () => {
             );
           })}
       </div>
-      <Footer />
     </div>
   );
 };

@@ -1,7 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
-import "./Styles/Cart.module.css";
 import { useContext, useReducer } from "react";
 import { CartContext } from "./Context/Context";
 import styles from "./Styles/Cart.module.css";
@@ -97,7 +95,6 @@ const Cart = () => {
         })}
         <span>Total Price: {state.cartTotal} RON</span>
       </div>
-      <Footer />
     </div>
   );
 };

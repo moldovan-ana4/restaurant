@@ -4,7 +4,7 @@
   display: grid;
   grid-template-rows: repeat(4, 400px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* max-width: 1500px; */
+  max-width: 1500px;
   gap: 30px;
 }
 

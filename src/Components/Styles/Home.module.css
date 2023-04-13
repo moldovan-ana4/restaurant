@@ -45,19 +45,23 @@
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 370px) {
-  .carousel__img {
+@media (max-width: 370px) {
+  .carousel__img img {
+    width: 310px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    width: 310px;
-    height: 280px;
+    justify-content: center;
+    align-items: center;
   }
+
   .carousel__name {
     font-size: 20px;
     display: flex;
     flex-direction: column-reverse;
     gap: 50px;
     margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
   }
-
 }
