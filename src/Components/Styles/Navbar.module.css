@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #eee;
+  padding: 15px;
 }
 .nav__container .logo {
   font-size: 27px;
@@ -53,9 +54,9 @@ li a {
   color: #192a56;
 }
 
-/* @media screen and (max-width: 370px) {
+@media screen and (max-width: 370px) {
 .nav__container {
 
 
 }
-} */
+}
