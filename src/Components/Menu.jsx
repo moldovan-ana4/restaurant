@@ -27,8 +27,6 @@ const Menu = () => {
                 </div>
                 <div className={styles.d__flex}>
                   <div>
-                    {/* UPDATE */}
-
                     <button
                       onClick={() => {
                         const itemIndex = order.findIndex(
@@ -61,8 +59,6 @@ const Menu = () => {
                     >
                       Add To Cart
                     </button>
-
-                    {/* UPDATE */}
                   </div>
                   <div className={styles.menu__pricing}>{item.price} RON</div>
                 </div>

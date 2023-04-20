@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useContext, useReducer } from "react";
 import Navbar from "./Navbar";
-import { useContext, useReducer } from "react";
 import { CartContext } from "./Context/Context";
 import styles from "./Styles/Cart.module.css";
 
@@ -8,7 +7,6 @@ const Cart = () => {
   const { orders } = useContext(CartContext);
   const [order] = orders;
 
-  //UPDATE
   function reducer(state, action) {
     switch (action.type) {
       case "increase": {
@@ -53,7 +51,6 @@ const Cart = () => {
     cartTotal: calculateTotal(order),
   });
 
-  
   return (
     <div>
       <Navbar />
@@ -95,6 +92,9 @@ const Cart = () => {
         })}
         <span>Total Price: {state.cartTotal} RON</span>
       </div>
+      <form>
+
+      </form>
     </div>
   );
 };
