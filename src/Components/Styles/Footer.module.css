@@ -6,7 +6,7 @@
   flex-flow: row;
   justify-content: space-evenly;
   color: #192a56;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .footer__logo {
@@ -42,6 +42,7 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .footer__copyright {
@@ -54,3 +55,10 @@
 
 }
 
+@media screen and (max-width: 370px) {
+  .footer__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+}

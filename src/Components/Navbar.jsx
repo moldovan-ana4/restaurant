@@ -17,7 +17,7 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faUtensils} />
         <Link to="/">resto.</Link>
       </span>
-      <nav className={styles.navbar__links}>
+      <div className={styles.navbar__links}>
         <ul>
           <li onClick={() => navigate("/")}>home </li>
           <li onClick={() => navigate("/aboutUs")}>about us</li>
@@ -35,7 +35,7 @@ const Navbar = () => {
             </span>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
   );
 };

@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
-import styles from "./Styles/Home.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import pizza_margherita from "./Asests/img/pizza_margherita.jpg";
 import salamino_picante from "./Asests/img/salamino_picante.jpeg";
 import pizza_slice from "./Asests/img/pizza_slice.png";
 import tagliatelle_chicken from "./Asests/img/tagliatelle_chicken.jpg";
+import styles from "./Styles/Home.module.css";
 
 const Home = () => {
   return (
@@ -53,11 +52,10 @@ const Home = () => {
       <div className={styles.home__schedule}>
         <span>Our Timetable</span>
       </div>
-        <div className={styles.home__program}>
-          <span>Monday - Thursday 16:00 - 22:00</span>
-          <span>Friday - Sunday 10:00 - 22:00</span>
-        </div>
-      <Footer />
+      <div className={styles.home__program}>
+        <span>Monday - Thursday 16:00 - 22:00</span>
+        <span>Friday - Sunday 10:00 - 22:00</span>
+      </div>
     </div>
   );
 };

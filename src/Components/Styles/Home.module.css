@@ -2,7 +2,6 @@
   padding: 10px;
   margin-top: 15px;
   display: flex;
-  max-width: 1500px;
 }
 
 .carousel__img {
@@ -44,4 +43,24 @@
   font-size: 20px;
   color: #27ae60;
   margin-bottom: 25px;
+}
+
+@media (max-width: 370px) {
+  .carousel__img img {
+    width: 310px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel__name {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+  }
 }
