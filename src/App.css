@@ -1,0 +1,26 @@
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------  Styles for small screens ----------------------------------*/
+@media only screen and (max-width: 768px) {
+  .hamburger-react{
+      display: block;
+  }
+}
+
+/*---------------------  Styles for medium screens ----------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hamburger-react{
+      display: none;
+  }
+}
+
+/*---------------------  Styles for large screens ----------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .hamburger-react{
+      display: none;
+  }
+}

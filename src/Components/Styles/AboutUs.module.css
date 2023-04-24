@@ -53,7 +53,7 @@
   color: #27ae60;
 }
 
-/* @media screen and (max-width: 370px) {
+@media screen and (max-width: 370px) {
   .about__container {
     display: grid;
     grid-template-columns: min-content;
@@ -65,5 +65,5 @@
     text-align: center;
   }
 
-} */
+} 
 

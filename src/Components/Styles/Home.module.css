@@ -1,15 +1,14 @@
 .home__description {
-  padding: 10px;
+  /*padding: 10px;*/
   margin-top: 15px;
-  display: flex;
+  /*display: flex;*/
 }
 
 .carousel__img {
-  width: 45%;
-  height: 30%;
-  aspect-ratio: auto;
+  /*width: 45%;*/
+  /*height: 30%;*/
+  /*aspect-ratio: auto;*/
   display: flex;
-  border-radius: 40%;
   justify-content: space-between;
 }
 .carousel__img img {
@@ -45,7 +44,7 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: 370px) {
+@media only screen and (max-width: 768px) {
   .carousel__img img {
     width: 310px;
     height: auto;

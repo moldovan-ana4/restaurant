@@ -1,5 +1,4 @@
 import React, { useContext, createContext } from "react";
-import Navbar from "./Navbar";
 import styles from "./Styles/Menu.module.css";
 import { CartContext } from "./Context/Context";
 
@@ -11,8 +10,6 @@ const Menu = () => {
   const [data, setData] = products;
   const [order, setOrder] = orders;
   return (
-    <div>
-      <Navbar />
       <div className={styles.grid__container}>
         {data &&
           data.map((item, i) => {
@@ -27,8 +24,6 @@ const Menu = () => {
                 </div>
                 <div className={styles.d__flex}>
                   <div>
-                    {/* UPDATE */}
-
                     <button
                       onClick={() => {
                         const itemIndex = order.findIndex(
@@ -61,8 +56,6 @@ const Menu = () => {
                     >
                       Add To Cart
                     </button>
-
-                    {/* UPDATE */}
                   </div>
                   <div className={styles.menu__pricing}>{item.price} RON</div>
                 </div>
@@ -70,7 +63,6 @@ const Menu = () => {
             );
           })}
       </div>
-    </div>
   );
 };
 export default Menu;
