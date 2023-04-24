@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #eee;
-  /* padding: 15px; */
+   padding: 15px;
 }
 .nav__container .logo {
   font-size: 27px;
@@ -54,16 +54,24 @@ li a {
   color: #192a56;
 }
 
-@media screen and (max-width: 370px) {
-.nav__container {
+/*---------------------  Styles for small screens ----------------------------------*/
+@media only screen and (max-width: 768px) {
+  .navbar__links{
+    display: none;
+  }
 
 }
 
-.navbar__links {
-padding: 15px;
+/*---------------------  Styles for medium screens ----------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar__links{
+    display: block;
+  }
 }
-.nav__container .logo {
 
-} 
-
+/*---------------------  Styles for large screens ----------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .navbar__links{
+    display: block;
+  }
 }

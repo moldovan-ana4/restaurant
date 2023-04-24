@@ -6,8 +6,7 @@ import styles from "./Styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <div>
-      <div className={styles.footer__container}>
+      <footer className={styles.footer__container}>
         <div className={styles.footer__logo}>
           <span className={styles.footer__icons}>
             {" "}
@@ -15,17 +14,20 @@ const Footer = () => {
           </span>
           <span> Resto.</span>
         </div>
+
         <div className={styles.footer__follow__us}>
           <h4>Follow us: </h4>
           <div className={styles.footer__socials}>
             <span className={styles.footer__icons}>{<AiFillInstagram />}</span>
             <span> Instagram</span>
           </div>
+
           <div className={styles.footer__socials}>
             <span className={styles.footer__icons}>{<AiFillFacebook />}</span>
             <span> Facebook</span>
           </div>
         </div>
+
         <div className={styles.footer__adress}>
           <h4>Contact: </h4>
           <ul> </ul>
@@ -33,12 +35,12 @@ const Footer = () => {
           <li>Email: contact@resto.ro</li>
           <li>Street Deva 46, Cluj-Napoca</li>
         </div>
-      </div>
-        <hr />
-      <div className={styles.footer__copyright}>
-        Copyright 2020 Resto. | All Rights Reserved
-      </div>
-    </div>
+
+          <hr />
+        <div className={styles.footer__copyright}>
+          Copyright 2020 Resto. | All Rights Reserved
+        </div>
+      </footer>
   );
 };
 

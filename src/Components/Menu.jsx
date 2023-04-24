@@ -1,5 +1,4 @@
 import React, { useContext, createContext } from "react";
-import Navbar from "./Navbar";
 import styles from "./Styles/Menu.module.css";
 import { CartContext } from "./Context/Context";
 
@@ -11,8 +10,6 @@ const Menu = () => {
   const [data, setData] = products;
   const [order, setOrder] = orders;
   return (
-    <div>
-      <Navbar />
       <div className={styles.grid__container}>
         {data &&
           data.map((item, i) => {
@@ -66,7 +63,6 @@ const Menu = () => {
             );
           })}
       </div>
-    </div>
   );
 };
 export default Menu;

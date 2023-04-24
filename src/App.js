@@ -6,12 +6,13 @@ import Review from "./Components/Review";
 import Cart from "./Components/Cart";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="container">
+     <Navbar />
       <Routes>
-        <Route path="/navbar" element={<Navbar/>}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/aboutUs" element={<AboutUs />}></Route>
         <Route path="/menu" element={<Menu />}></Route>

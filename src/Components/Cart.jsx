@@ -1,5 +1,4 @@
 import React, { useContext, useReducer } from "react";
-import Navbar from "./Navbar";
 import { CartContext } from "./Context/Context";
 import styles from "./Styles/Cart.module.css";
 
@@ -53,7 +52,6 @@ const Cart = () => {
 
   return (
     <div>
-      <Navbar />
       <div className={styles.cart__container}>
         {state.cart.map((item) => {
           return (
@@ -92,9 +90,7 @@ const Cart = () => {
         })}
         <span>Total Price: {state.cartTotal} RON</span>
       </div>
-      <form>
-
-      </form>
+     
     </div>
   );
 };

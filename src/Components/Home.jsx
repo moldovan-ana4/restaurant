@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import pizza_margherita from "./Asests/img/pizza_margherita.jpg";
@@ -11,7 +10,6 @@ import styles from "./Styles/Home.module.css";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <div className={styles.home__description}>
         <Carousel
           autoPlay={true}

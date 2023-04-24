@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import pizza_slice from "./Asests/img/pizza_slice.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck, faWallet } from "@fortawesome/free-solid-svg-icons";
@@ -8,8 +7,6 @@ import styles from "./Styles/AboutUs.module.css";
 const AboutUs = () => {
   return (
     <div>
-      <Navbar />
-      <div>
         <div className={styles.about__titles}>
           <span>About Us</span>
           <h2>WHY CHOOSE US?</h2>
@@ -50,7 +47,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
