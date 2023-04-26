@@ -26,3 +26,17 @@
   font-size: 15px;
   color: #192a56;
 }
+
+
+
+/*-----------------Styles for small screens ----------------------------------*/
+@media only screen and (max-width: 768px) {
+}
+
+/*----------------Styles for medium screens ---------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*-----------------Styles for large screens ----------------------------------*/
+@media only screen and (min-width: 1024px) {
+}
