@@ -45,7 +45,7 @@
 }
 
 /*-----------------Styles for small screens ----------------------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .carousel__img img {
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@
 }
 
 /*----------------Styles for medium screens ---------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
 }
 
 /*-----------------Styles for large screens ----------------------------------*/
