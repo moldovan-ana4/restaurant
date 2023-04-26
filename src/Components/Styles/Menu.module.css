@@ -10,6 +10,8 @@
 }
 
 .card {
+  /* display: flex;
+  flex-direction: column; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
@@ -21,7 +23,7 @@
 
 .card img {
   border-radius: 10px;
-  width: 350px;
+  width: 310px;
   height: 200px;
   aspect-ratio: auto;
 }
@@ -57,12 +59,23 @@
 
 .d__flex button:hover {
   background-color: #27ae60;
-  /* width: 150px; */
-  border: 2px #27ae60;
 }
 
 .menu__pricing {
   font-size: 23px;
   font-weight: normal;
   color: #27ae60;
+}
+
+/*-----------------Styles for small screens ----------------------------------*/
+@media only screen and (max-width: 768px) {
+
+}
+
+/*----------------Styles for medium screens ---------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*-----------------Styles for large screens ----------------------------------*/
+@media only screen and (min-width: 1024px) {
 }

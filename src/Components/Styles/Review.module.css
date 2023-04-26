@@ -49,3 +49,15 @@
   font-size: 17px;
   margin-left: 25px;
 }
+
+/*-----------------Styles for small screens ----------------------------------*/
+@media only screen and (max-width: 768px) {
+}
+
+/*----------------Styles for medium screens ---------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*-----------------Styles for large screens ----------------------------------*/
+@media only screen and (min-width: 1024px) {
+}

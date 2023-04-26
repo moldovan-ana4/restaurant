@@ -1,9 +1,10 @@
 .nav__container {
   display: flex;
   justify-content: space-between;
+  padding: 15px;
   background-color: #eee;
-   padding: 15px;
 }
+
 .nav__container .logo {
   font-size: 27px;
   text-transform: capitalize;
@@ -14,13 +15,13 @@
 .logo a {
   color: #192a56;
   text-decoration: none;
-
 }
 
 .navbar__links ul {
   display: flex;
   flex-direction: row;
 }
+
 .navbar__links ul li {
   list-style-type: none;
   margin: 0 15px;
@@ -28,10 +29,6 @@
   text-transform: capitalize;
   color: #666;
   cursor: pointer;
-  background-color: #eee;
-}
-
-.nav__container  .navbar__links {
   background-color: #eee;
 }
 
@@ -56,22 +53,42 @@ li a {
 
 /*---------------------  Styles for small screens ----------------------------------*/
 @media only screen and (max-width: 768px) {
-  .navbar__links{
+  .navbar__links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__links {
+    display: block;
+  }
+
+  .nav__container {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar__links.show {
+    display: block;
+  }
+
+  .navbar__links.hide {
     display: none;
   }
-
 }
 
-/*---------------------  Styles for medium screens ----------------------------------*/
+/*-----------------Styles for small screens ----------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .navbar__links{
+}
+
+/*-----------------Styles for medium screens ---------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .navbar__links {
     display: block;
   }
 }
 
-/*---------------------  Styles for large screens ----------------------------------*/
-@media only screen and (min-width: 1024px) {
-  .navbar__links{
-    display: block;
-  }
-}
+/*-----------------Styles for large screens ---------------------------------*/

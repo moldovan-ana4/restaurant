@@ -5,23 +5,30 @@ import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { AiFillShopping } from "react-icons/ai";
 import { CartContext } from "./Context/Context";
 import styles from "./Styles/Navbar.module.css";
-import Hamburger from 'hamburger-react';
+import Hamburger from "hamburger-react";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const { orders } = useContext(CartContext);
   const [order] = orders;
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <nav className={styles.nav__container}>
-        <div className={styles.logo}>
-            <FontAwesomeIcon icon={faUtensils} />
-            <Link to="/">resto.</Link>
+      <div className={styles.logo}>
+        <div>
+          <FontAwesomeIcon icon={faUtensils} />
+          <Link to="/">resto.</Link>
         </div>
-
-
-      <div className={styles.navbar__links}>
+        <div>
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
+      </div>
+      <div
+        className={`${styles.navbar__links} ${
+          isOpen ? styles.show : styles.hide
+        }`}
+      >
         <ul>
           <li onClick={() => navigate("/")}>home </li>
           <li onClick={() => navigate("/aboutUs")}>about us</li>
@@ -40,7 +47,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-        <Hamburger toggled={isOpen} toggle={setOpen} onClick={() => {}} />
     </nav>
   );
 };
