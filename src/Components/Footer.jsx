@@ -15,6 +15,7 @@ const Footer = () => {
         </span>
         <span> Resto.</span>
       </div>
+      <hr />
 
       <div className={styles.footer__follow__us}>
         <h4>Follow us: </h4>
@@ -32,14 +33,16 @@ const Footer = () => {
           </span>
         </div>
       </div>
+      {/* <hr />
 
       <div className={styles.footer__adress}>
         <h4>Contact: </h4>
-        <ul> </ul>
-        <li>Phone Number: 0743 911 520</li>
-        <li>Email: contact@resto.ro</li>
-        <li>Street Deva 46, Cluj-Napoca</li>
-      </div>
+        <ul>
+          <li>Phone Number: 0743 911 520</li>
+          <li>Email: contact@resto.ro</li>
+          <li>Street Deva 46, Cluj-Napoca</li>
+        </ul>
+      </div> */}
 
       <hr />
       <div className={styles.footer__copyright}>

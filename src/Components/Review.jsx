@@ -16,14 +16,14 @@ const Review = () => {
 
   return (
     <div className={styles.review__page}>
-      <section className={styles.review__intro}>
-        <span>What our customers say about the menu?</span>
-      </section>
-      <div className={styles.review__description}>
+      <span>What our customers say about the menu?</span>
+      <div className={styles.review__intro}>
         <p>Check it out, now!</p>
+      </div>
+      <div className={styles.review__description}>
         <Carousel
           autoPlay={true}
-          interval={5000}
+          interval={3000}
           infiniteLoop={true}
           renderThumbs={() => {}}
           showStatus={false}
@@ -31,17 +31,24 @@ const Review = () => {
           {reviews.map((item, i) => {
             return (
               <div className={styles.review__container} key={i}>
-                <div className={styles.review__user}>
-                  <img src={item.image} alt={item.image} />
-                  <span>{item.name}</span>
-                </div>
                 <div className={styles.review__message}>
                   <p>{item.message}</p>
+                </div>
+                <div className={styles.review__user}>
+                  <span>{item.name}</span>
                 </div>
               </div>
             );
           })}
         </Carousel>
+      </div>
+      <div className={styles.review__contact}>
+        <span>Contact Information:</span>
+        <ul>
+          <li>Phone Number: 0743 911 520</li>
+          <li>Email: contact@resto.ro</li>
+          <li>Street Deva 46, Cluj-Napoca</li>
+        </ul>
       </div>
     </div>
   );
