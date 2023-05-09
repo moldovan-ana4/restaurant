@@ -1,19 +1,21 @@
 .review__page {
   color: #192a56;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .review__intro {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #27ae60;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .review__description {
   font-size: 25px;
   color: #27ae60;
+  padding: 20px;
 }
 
 .review__container {
@@ -30,32 +32,60 @@
 
 .review__message {
   color: #666;
-  font-size: 15px;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .review__contact {
-margin-top: 30px;
-font-size: 27px;
-row-gap: 40px;
-color:#27ae60;
-margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 27px;
+  row-gap: 40px;
+  color: #27ae60;
+  margin-bottom: 30px;
+}
 
+.review__contact ul {
+  margin-top: 30px;
 }
 
 .review__contact ul li {
   font-size: 20px;
-  text-align:center;
-  color:#192a56;
+  text-align: center;
+  color: #192a56;
 }
 
 /*-----------------Styles for small screens ----------------------------------*/
 @media only screen and (max-width: 768px) {
+  .review__page {
+    font-size: 27px;
+  }
+
+  .review__intro {
+    font-size: 25px;
+  }
+
+  .review__message {
+    font-size: 17px;
+  }
+
+  .review__contact {
+    font-size: 25px;
+
+  }
 }
 
 /*----------------Styles for medium screens ---------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .review__message {
+    font-size: 23px;
+  }
+
+  
 }
 
 /*-----------------Styles for large screens ----------------------------------*/
 @media only screen and (min-width: 1024px) {
+  .review__contact {
+    font-size: 35px;
+  }
 }

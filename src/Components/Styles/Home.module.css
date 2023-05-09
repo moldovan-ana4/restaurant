@@ -22,6 +22,7 @@
   font-weight: bold;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .home__schedule {
@@ -29,7 +30,7 @@
   flex-flow: column;
   color: #192a56;
   font-size: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -46,25 +47,39 @@
 
 /*-----------------Styles for small screens ----------------------------------*/
 @media only screen and (max-width: 767px) {
-  .carousel__img img {
+  .carousel__img {
     display: flex;
     flex-direction: column;
+
+  }
+  .carousel__name {
+    font-size: 25px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-  .carousel__name {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 50px;
-    margin-bottom: 25px;
-    justify-content: center;
-    align-items: center;
+
+  .home__schedule {
+    margin-top: 35px;
   }
 }
 
 /*----------------Styles for medium screens ---------------------------------*/
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .carousel__name {
+    font-size: 32px;
+    margin: 0 5px;
+  }
+
+  .home__schedule {
+    font-size: 30px;
+  }
+
+  .home__program {
+    font-size: 25px;
+  }
 }
 
 /*-----------------Styles for large screens ----------------------------------*/

@@ -33,16 +33,6 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      {/* <hr />
-
-      <div className={styles.footer__adress}>
-        <h4>Contact: </h4>
-        <ul>
-          <li>Phone Number: 0743 911 520</li>
-          <li>Email: contact@resto.ro</li>
-          <li>Street Deva 46, Cluj-Napoca</li>
-        </ul>
-      </div> */}
 
       <hr />
       <div className={styles.footer__copyright}>

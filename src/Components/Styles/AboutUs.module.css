@@ -3,22 +3,23 @@
   align-items: center;
   justify-content: right;
   flex-direction: column;
-  margin-top: 15px;
-  /* padding: 10px; */
+  margin-top: 20px;
 }
 
 .about__titles span {
   color: #27ae60;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: bolder;
 }
 
 .about__titles h2 {
   color: #192a56;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
 .about__container h3 {
-  font-size: 26px;
+  font-size: 35px;
   color: #192a56;
 }
 .about__container {
@@ -26,13 +27,11 @@
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-  line-height: 2; 
+  line-height: 2;
 }
-
 
 .about__details {
   margin-top: 25px;
-  /* padding: 10px; */
   display: flex;
   justify-content: space-around;
   color: #192a56;
@@ -42,41 +41,96 @@
   border: 1px solid #192a56;
   background-color: #eee;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .about__icons {
   color: #27ae60;
 }
 
+.about__options .about__icons {
+  font-size: 27px;
+}
+
 /*-----------------Styles for small screens ----------------------------------*/
 @media only screen and (max-width: 767px) {
+  .about__titles span {
+    font-size: 20px;
+  }
 
-.about__container {
-  display: flex;
-  flex-direction: column;
-}
+  .about__titles h2 {
+    font-size: 25px;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
 
-.about__container img {
-width: 80%;
-height: 65%;
+  .about__container img {
+    width: 80%;
+    height: 65%;
+  }
 
-}
+  .about__container h3 {
+    text-align: center;
+    font-size: 25px;
+  }
 
-.about__container h3 {
-  text-align: center;
-}
+  .about__container {
+    font-size: 17px;
+  }
 
-.about__details {
-  margin-bottom: 25px;
-}
+  .about__details {
+    margin-bottom: 25px;
+  }
 
 }
 
 /*----------------Styles for medium screens ---------------------------------*/
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .about__titles span {
+    font-size: 27px;
+  }
+
+  .about__titles h2 {
+    font-size: 30px;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .about__container img {
+    width: 80%;
+    height: 65%;
+  }
+
+  .about__container h3 {
+    text-align: center;
+  }
+
+  .about__details {
+    margin-bottom: 25px;
+    font-size: 17px;
+  }
+
+  .about__options span {
+    font-size: 17px;
+  }
 }
 
 /*-----------------Styles for large screens ----------------------------------*/
 @media only screen and (min-width: 1024px) {
+  .about__container {
+    font-size:20px;
+  }
+
+
+  .about__options span {
+    font-size: 21px;
+  }
 }

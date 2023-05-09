@@ -22,8 +22,7 @@ const Review = () => {
       </div>
       <div className={styles.review__description}>
         <Carousel
-          autoPlay={true}
-          interval={3000}
+          autoPlay={false}
           infiniteLoop={true}
           renderThumbs={() => {}}
           showStatus={false}
