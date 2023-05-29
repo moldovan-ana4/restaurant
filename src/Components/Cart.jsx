@@ -4,7 +4,7 @@ import styles from "./Styles/Cart.module.css";
 
 const Cart = () => {
   const { orders } = useContext(CartContext);
-  const [order] = orders;
+  const [order, setOrder] = orders;
 
   function reducer(state, action) {
     switch (action.type) {
@@ -14,6 +14,7 @@ const Cart = () => {
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
+        setOrder(newOrder);
         return {
           ...state,
           cart: newOrder,
@@ -28,6 +29,7 @@ const Cart = () => {
               : item
           )
           .filter((item) => item.quantity > 0);
+        setOrder(newOrder);
         return {
           ...state,
           cart: newOrder,
@@ -56,7 +58,6 @@ const Cart = () => {
         {state.cart.map((item) => {
           return (
             <div key={item.id}>
-              <img src={item.imgUrl} alt={item.name} />
               <div className={styles.cart__name}>
                 <div>{item.name}</div>
                 <div>{item.price} RON</div>
@@ -90,7 +91,6 @@ const Cart = () => {
         })}
         <span>Total Price: {state.cartTotal} RON</span>
       </div>
-     
     </div>
   );
 };

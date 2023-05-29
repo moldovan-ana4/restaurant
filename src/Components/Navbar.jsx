@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,15 @@ const Navbar = () => {
   const { orders } = useContext(CartContext);
   const [order] = orders;
   const [isOpen, setOpen] = useState(false);
-
+  const [total, setTotal] = useState(0)
+  let sum = 0;
+  useEffect(() => {
+    order.map(item => {
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+     sum += Number(item.quantity)
+     return setTotal(sum)
+    })
+  },[order])
   return (
     <nav className={styles.nav__container}>
       <div className={styles.logo}>
@@ -35,7 +43,7 @@ const Navbar = () => {
           <li onClick={() => navigate("/menu")}>menu</li>
           <li onClick={() => navigate("/review")}>reviews </li>
           <li>
-            {order.length > 0 ? order.length : ""}
+            {order.length > 0 ? total : ""}
             <span
               className={styles.navbar__cart}
               onClick={() => {
